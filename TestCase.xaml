@@ -56,7 +56,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59.2" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;test updated&quot;]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59.2" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;test 2&quot;]" />
     <ui:Comment sap:VirtualizedContainerService.HintSize="334,55.6" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Blank Test Case" />
   </Sequence>
 </Activity>
