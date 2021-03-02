@@ -1,4 +1,29 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="702,657.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" this:TestCase.LoanAmount="120000" this:TestCase.LoanTerm="5" this:TestCase.LoanIncome="30000" this:TestCase.LoanAge="35" this:TestCase.LoanGranted="No" this:TestCase.Message="Sorry, at this time you have not been approved for a loan." xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="LoanEmail" Type="InArgument(x:String)" />
+    <x:Property Name="LoanAmount" Type="InArgument(x:String)" />
+    <x:Property Name="LoanTerm" Type="InArgument(x:String)" />
+    <x:Property Name="LoanIncome" Type="InArgument(x:String)" />
+    <x:Property Name="LoanAge" Type="InArgument(x:String)" />
+    <x:Property Name="LoanGranted" Type="InArgument(x:String)" />
+    <x:Property Name="LoanRate" Type="InArgument(x:String)" />
+    <x:Property Name="Message" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:TestCase.LoanEmail>
+    <InArgument x:TypeArguments="x:String">
+      <Literal x:TypeArguments="x:String" Value="" />
+    </InArgument>
+  </this:TestCase.LoanEmail>
+  <this:TestCase.LoanRate>
+    <InArgument x:TypeArguments="x:String">
+      <Literal x:TypeArguments="x:String" Value="" />
+    </InArgument>
+  </this:TestCase.LoanRate>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>826,989.2</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -26,6 +51,10 @@
       <x:String>UiPath.Testing.Activities</x:String>
       <x:String>System.Activities.DynamicUpdate</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Testing</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -55,28 +84,126 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="376,492.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="836,824" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59.2" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;This is where you can find your test case and verification statements...&quot;]" />
-    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Process Sequence.xaml">
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="794,113.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Process Sequence.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        <InArgument x:TypeArguments="x:String" x:Key="LoanEmail">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LoanEmail" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="LoanAmount">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LoanAmount" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="LoanTerm">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LoanTerm" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="LoanIncome">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LoanIncome" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="LoanAge">
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LoanAge" />
+        </InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <uta:VerifyExpression KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[&quot;ok&quot;.Equals(&quot;ok&quot;)]" sap:VirtualizedContainerService.HintSize="334,52.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="794,483.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-    </uta:VerifyExpression>
-    <ui:Comment sap:VirtualizedContainerService.HintSize="334,55.6" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Blank Test Case" />
+      <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[LoanGranted]" sap:VirtualizedContainerService.HintSize="752,391.2" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+        <uta:VerifyControlAttribute KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" x:Key="No" ContinueOnFailure="True" sap:VirtualizedContainerService.HintSize="712,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Equality" OutputArgument="Value" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+          <uta:VerifyControlAttribute.ActivityToTest>
+            <ActivityAction>
+              <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'H1'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
+                <ui:GetValue.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="50e0bffe-aaf5-4bb1-971f-f89e810164c7" InformativeScreenshot="a4e2d95548c5b3d7240fa5b61d605aa6" Selector="&lt;html app='chrome.exe' title='UiBank' /&gt;&lt;webctrl idx='1' tag='H1' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:GetValue.Target>
+                <ui:GetValue.Value>
+                  <OutArgument x:TypeArguments="x:Object">
+                    <VariableReference x:TypeArguments="x:Object">
+                      <VariableReference.Variable>
+                        <Variable x:TypeArguments="x:Object" x:Name="__ReferenceID0" Name="Value" />
+                      </VariableReference.Variable>
+                    </VariableReference>
+                  </OutArgument>
+                </ui:GetValue.Value>
+              </ui:GetValue>
+            </ActivityAction>
+          </uta:VerifyControlAttribute.ActivityToTest>
+          <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+            <ActivityFunc x:TypeArguments="x:Object">
+              <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_1">
+                <uta:ArgumentsBridge.Input>
+                  <InArgument x:TypeArguments="x:Object">
+                    <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID0}" />
+                  </InArgument>
+                </uta:ArgumentsBridge.Input>
+              </uta:ArgumentsBridge>
+            </ActivityFunc>
+          </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+          <uta:VerifyControlAttribute.Expression>
+            <InArgument x:TypeArguments="x:String">[Message]</InArgument>
+          </uta:VerifyControlAttribute.Expression>
+        </uta:VerifyControlAttribute>
+        <uta:VerifyControlAttribute KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" x:Key="Yes" ContinueOnFailure="True" sap:VirtualizedContainerService.HintSize="712,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_2" Operator="Equality" OutputArgument="Value" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+          <uta:VerifyControlAttribute.ActivityToTest>
+            <ActivityAction>
+              <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN  rateValue'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_2">
+                <ui:GetValue.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8bb3489e-f4e3-4378-89b5-eb089d0a625d" InformativeScreenshot="12fe26fb4fed876d3b51831e2474064b" Selector="&lt;html app='chrome.exe' title='UiBank' /&gt;&lt;webctrl id='rateValue' tag='SPAN' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:GetValue.Target>
+                <ui:GetValue.Value>
+                  <OutArgument x:TypeArguments="x:Object">
+                    <VariableReference x:TypeArguments="x:Object">
+                      <VariableReference.Variable>
+                        <Variable x:TypeArguments="x:Object" x:Name="__ReferenceID1" Name="Value" />
+                      </VariableReference.Variable>
+                    </VariableReference>
+                  </OutArgument>
+                </ui:GetValue.Value>
+              </ui:GetValue>
+            </ActivityAction>
+          </uta:VerifyControlAttribute.ActivityToTest>
+          <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+            <ActivityFunc x:TypeArguments="x:Object">
+              <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_2">
+                <uta:ArgumentsBridge.Input>
+                  <InArgument x:TypeArguments="x:Object">
+                    <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID1}" />
+                  </InArgument>
+                </uta:ArgumentsBridge.Input>
+              </uta:ArgumentsBridge>
+            </ActivityFunc>
+          </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+          <uta:VerifyControlAttribute.Expression>
+            <InArgument x:TypeArguments="x:String">[LoanRate]</InArgument>
+          </uta:VerifyControlAttribute.Expression>
+        </uta:VerifyControlAttribute>
+      </Switch>
+    </Sequence>
+    <ui:Comment sap:VirtualizedContainerService.HintSize="794,55.6" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Blank Test Case" />
   </Sequence>
 </Activity>
