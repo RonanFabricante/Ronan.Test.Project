@@ -5,13 +5,14 @@
   "dependencies": {
     "UiPath.System.Activities": "[20.10.3]",
     "UiPath.Testing.Activities": "[1.2.4]",
-    "UiPath.UIAutomation.Activities": "[20.10.8]"
+    "UiPath.UIAutomation.Activities": "[20.10.8]",
+    "UiPathTeam.WhatsGoingOn.Activities": "[1.2.2]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.10.3.0",
-  "projectVersion": "1.0.68446466",
+  "projectVersion": "1.0.68522424",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
