@@ -1,3 +1,9 @@
 {
-  "issueKeyTestcaseValues": {}
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://test-management-hub-devtest.uipath.com/",
+  "defaultProject": {
+    "id": "2e5e5dd3-9a6b-4ee8-4c56-08d8cb024e1c",
+    "name": "Ronan Test Project",
+    "key": "RTP"
+  }
 }

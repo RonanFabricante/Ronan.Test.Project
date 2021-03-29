@@ -43,7 +43,7 @@
         "editingStatus": "Publishable",
         "testCaseId": "c9c219b4-80bf-4df7-8c78-ef2473d5d504",
         "dataVariationFilePath": ".variations\\Loan Quotes_Loan Quotes_1.json",
-        "fileName": "TestCase.xaml"
+        "fileName": "CICD TestCase.xaml"
       }
     ],
     "modernBehavior": false
