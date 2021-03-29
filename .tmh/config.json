@@ -1,5 +1,7 @@
 {
-  "issueKeyTestcaseValues": {},
+  "issueKeyTestcaseValues": {
+    "c9c219b4-80bf-4df7-8c78-ef2473d5d504": "df352710-adcf-41ea-4197-0b42552171ad"
+  },
   "testManagerBasePath": "https://test-management-hub-devtest.uipath.com/",
   "defaultProject": {
     "id": "2e5e5dd3-9a6b-4ee8-4c56-08d8cb024e1c",
