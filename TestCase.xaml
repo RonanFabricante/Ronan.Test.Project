@@ -22,7 +22,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>826,989.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>860,707.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -87,39 +87,29 @@
       <AssemblyReference>UiPath.Testing</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="836,824" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="581.6,502.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="794,113.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Process Sequence.xaml">
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="539.6,113.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Process Sequence.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="LoanEmail">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LoanEmail" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="LoanAmount">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LoanAmount" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="LoanTerm">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LoanTerm" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="LoanIncome">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LoanIncome" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="LoanAge">
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="LoanAge" />
-        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="LoanEmail">[LoanEmail]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="LoanAmount">[LoanAmount]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="LoanTerm">[LoanTerm]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="LoanIncome">[LoanIncome]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="LoanAge">[LoanAge]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="794,483.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="539.6,257.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[LoanGranted]" sap:VirtualizedContainerService.HintSize="752,391.2" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+      <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[LoanGranted]" sap:VirtualizedContainerService.HintSize="497.6,165.2" sap2010:WorkflowViewState.IdRef="Switch`1_1">
         <uta:VerifyControlAttribute KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" x:Key="No" ContinueOnFailure="True" sap:VirtualizedContainerService.HintSize="712,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Equality" OutputArgument="Value" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
           <uta:VerifyControlAttribute.ActivityToTest>
             <ActivityAction>
@@ -204,6 +194,5 @@
         </uta:VerifyControlAttribute>
       </Switch>
     </Sequence>
-    <ui:Comment sap:VirtualizedContainerService.HintSize="794,55.6" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Blank Test Case" />
   </Sequence>
 </Activity>
