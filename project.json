@@ -1,5 +1,5 @@
 {
-  "name": "Ronan Test Project - CICD",
+  "name": "Ronan Test Project CICD",
   "description": "Blank Process",
   "main": "Process Sequence.xaml",
   "dependencies": {
