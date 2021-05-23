@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>860,3046</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>860,3006.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Process_Sequence_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -79,7 +79,7 @@
       <AssemblyReference>UiPathTeam.WhatsGoingOn.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Process_Sequence" sap:VirtualizedContainerService.HintSize="476,2840.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Process_Sequence" sap:VirtualizedContainerService.HintSize="476,2841.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="https://uibank.uipath.com/" Name="UiBankWeb" />
     </Sequence.Variables>
@@ -89,14 +89,14 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="start process" />
-    <uwa:ShowPopup MyCustomHeight="{x:Null}" MyCustomWidth="{x:Null}" MyTitle="{x:Null}" MyXCoord="{x:Null}" MyYCoord="{x:Null}" DisplayName="Show Popup Window" sap:VirtualizedContainerService.HintSize="434,62.4" sap2010:WorkflowViewState.IdRef="ShowPopup_1" MyBackColor="Blue" MyFontFamily="Consolas" MyFontSize="Size_18" MyFontStyle="Regular" MyHPosition="Center" MyMessage="Robot is running the test case." MyTextColor="White" MyVPosition="Top" MyWidth="Half" />
-    <uix:NApplicationCard DisplayName="Use Browser Chrome: UiBank" sap:VirtualizedContainerService.HintSize="434,2441.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1">
+    <uwa:ShowPopup MyCustomHeight="{x:Null}" MyCustomWidth="{x:Null}" MyTitle="{x:Null}" MyXCoord="{x:Null}" MyYCoord="{x:Null}" DisplayName="Show Popup Window" sap:VirtualizedContainerService.HintSize="434,62.4" sap2010:WorkflowViewState.IdRef="ShowPopup_1" MyBackColor="Blue" MyFontFamily="Consolas" MyFontSize="Size_18" MyFontStyle="Regular" MyHPosition="Center" MyMessage="Robot is running the test case 1." MyTextColor="White" MyVPosition="Top" MyWidth="Half" />
+    <uix:NApplicationCard DisplayName="Use Browser Chrome: UiBank" sap:VirtualizedContainerService.HintSize="434,2442.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,2224.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,2225.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
