@@ -89,7 +89,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434.285714285714,62.8571428571429" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="start process" />
-    <uwa:ShowPopup MyCustomHeight="{x:Null}" MyCustomWidth="{x:Null}" MyTitle="{x:Null}" MyXCoord="{x:Null}" MyYCoord="{x:Null}" DisplayName="Show Popup Window" sap:VirtualizedContainerService.HintSize="434.285714285714,62.8571428571429" sap2010:WorkflowViewState.IdRef="ShowPopup_1" MyBackColor="Blue" MyFontFamily="Consolas" MyFontSize="Size_18" MyFontStyle="Regular" MyHPosition="Center" MyMessage="Robot is running the test case ssscxsamppleju." MyTextColor="White" MyVPosition="Top" MyWidth="Half" />
+    <uwa:ShowPopup MyCustomHeight="{x:Null}" MyCustomWidth="{x:Null}" MyTitle="{x:Null}" MyXCoord="{x:Null}" MyYCoord="{x:Null}" DisplayName="Show Popup Window" sap:VirtualizedContainerService.HintSize="434.285714285714,62.8571428571429" sap2010:WorkflowViewState.IdRef="ShowPopup_1" MyBackColor="Blue" MyFontFamily="Consolas" MyFontSize="Size_18" MyFontStyle="Regular" MyHPosition="Center" MyMessage="Robot is running the tekjhjst case ssscxsamppleju." MyTextColor="White" MyVPosition="Top" MyWidth="Half" />
     <uix:NApplicationCard DisplayName="Use Browser Chrome: UiBank" sap:VirtualizedContainerService.HintSize="434.285714285714,2448.57142857143" sap2010:WorkflowViewState.IdRef="NApplicationCard_1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
