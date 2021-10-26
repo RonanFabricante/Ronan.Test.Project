@@ -14,16 +14,16 @@ steps:
   inputs:
     versionType: 'AutoVersion'
     projectJsonPath: '$(Build.SourcesDirectory)'
-    orchestratorConnection: 'Orchestrator'
+    orchestratorConnection: 'Staging Orchestrator'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
 - task: UiPathTest@2
   inputs:
     testTarget: 'TestSet'
-    orchestratorConnection: 'Orchestrator'
-    testSet: 'Test'
-    folderName: 'TestModern'
+    orchestratorConnection: 'Staging Orchestrator'
+    testSet: 'TestSet'
+    folderName: 'Ronan'
 - task: UiPathDeploy@2
   inputs:
-    orchestratorConnection: 'Orchestrator'
+    orchestratorConnection: 'Staging Orchestrator'
     packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
-    folderName: 'TestModern'
+    folderName: 'Ronan'
