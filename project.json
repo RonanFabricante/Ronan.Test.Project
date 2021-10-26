@@ -1,5 +1,5 @@
 {
-  "name": "Ronan Test Project CICD",
+  "name": "Ronan Test Project CICD Demo",
   "description": "Blank Process",
   "main": "Process Sequence.xaml",
   "dependencies": {
@@ -14,7 +14,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.10.3.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.88941934",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,

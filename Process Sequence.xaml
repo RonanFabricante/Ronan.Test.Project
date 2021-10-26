@@ -84,7 +84,7 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Process_Sequence" sap:VirtualizedContainerService.HintSize="476.571428571429,2649.14285714286" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Process Sequence" sap:VirtualizedContainerService.HintSize="476.571428571429,2649.14285714286" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="https://uibank.uipath.com/" Name="UiBankWeb" />
     </Sequence.Variables>
