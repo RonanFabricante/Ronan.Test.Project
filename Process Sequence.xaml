@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1364,2714.28571428571</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1254.28571428571,2714.28571428571</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Process_Sequence_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -93,7 +93,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uwa:ShowPopup MyCustomHeight="{x:Null}" MyCustomWidth="{x:Null}" MyTitle="{x:Null}" MyXCoord="{x:Null}" MyYCoord="{x:Null}" DisplayName="Show Popup Window" sap:VirtualizedContainerService.HintSize="434.285714285714,62.8571428571429" sap2010:WorkflowViewState.IdRef="ShowPopup_1" MyBackColor="Blue" MyFontFamily="Consolas" MyFontSize="Size_18" MyFontStyle="Regular" MyHPosition="Center" MyMessage="Robot is now fixded!" MyTextColor="White" MyVPosition="Top" MyWidth="Half" />
+    <uwa:ShowPopup MyCustomHeight="{x:Null}" MyCustomWidth="{x:Null}" MyTitle="{x:Null}" MyXCoord="{x:Null}" MyYCoord="{x:Null}" DisplayName="Show Popup Window" sap:VirtualizedContainerService.HintSize="434.285714285714,62.8571428571429" sap2010:WorkflowViewState.IdRef="ShowPopup_1" MyBackColor="Blue" MyFontFamily="Consolas" MyFontSize="Size_18" MyFontStyle="Regular" MyHPosition="Center" MyMessage="Robot is now fixed!" MyTextColor="White" MyVPosition="Top" MyWidth="Half" />
     <uix:NApplicationCard DisplayName="Use Browser Chrome: UiBank" sap:VirtualizedContainerService.HintSize="434.285714285714,2454.85714285714" sap2010:WorkflowViewState.IdRef="NApplicationCard_1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
